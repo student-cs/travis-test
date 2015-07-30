@@ -1,4 +1,4 @@
 language: node_js
 node_js:
   - "0.12"
-before_install: wget http://www.dropbox.com/s/wa1mfutfoths4xa/test.tar.gz\?dl\=0 -O test.tar.gz && tar xvfz test.tar.gz
+before_install: wget https://www.dropbox.com/s/k14lwx4v7o65p02/mytest.tar.gz?dl=0 -O test.tar.gz && tar xvfz test.tar.gz
