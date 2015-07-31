@@ -1,8 +1,13 @@
 var expect = require('expect.js');
 var anagrams;
-try{
-  anagrams = require(__dirname + '/../../anagrams/anagrams.js');
-}catch(e){
+// try{
+//   anagrams = require(__dirname + '/../../anagrams/anagrams.js');
+// }catch(e){
+//   console.log(e);
+// }
+try {
+  console.log(fs);
+}catch(e) {
   console.log(e);
 }
 if (anagrams){
