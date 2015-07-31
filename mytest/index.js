@@ -35,8 +35,6 @@ mocha.run()
     //     console.log(err);
     // })
     .on('end', function() {
-       	message = "all done";
-        console.log(message);
-        console.log(results);
+        console.log(results, 'results');
     });
 
