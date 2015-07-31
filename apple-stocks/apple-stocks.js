@@ -8,7 +8,7 @@
  *
  *  Write an efficient alogorithm for computing the best profit I could have made from 1 purchase
  *  and 1 sale of 1 Apple stock yesterday
- 
+ *
  */
 
 function bestProfit(stock_prices_yesterday) {
