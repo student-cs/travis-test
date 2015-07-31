@@ -53,3 +53,5 @@ EventEmitter.prototype.trigger = function(name){
 		}
 	}
 }
+
+module.exports = EventEmitter;

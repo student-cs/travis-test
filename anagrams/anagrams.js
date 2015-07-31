@@ -29,3 +29,5 @@ function anagrams(string) {
 	return Object.keys(combos);
 }
 
+
+module.exports = anagrams;

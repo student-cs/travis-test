@@ -29,3 +29,6 @@ Queue.prototype.pop = function(){
 	}
 	return this.stack2.pop();
 }
+
+
+module.exports = Stack;
