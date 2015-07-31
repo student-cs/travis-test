@@ -10,3 +10,5 @@ function highestProduct(array) {
 	var last = array.length -1;
 	return array[last-2]*array[last-1]*array[last];
 }
+
+module.exports = highestProduct;

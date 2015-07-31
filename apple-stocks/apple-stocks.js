@@ -40,3 +40,5 @@ function bestProfit(stock_prices_yesterday) {
 	return profit;
 }
 
+module.exports = bestProfit;
+
