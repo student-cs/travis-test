@@ -24,6 +24,7 @@ mocha.run()
     // })
     .on('test end', function(test) {
         results = test;
+        console.log(results, 'results');
     })
     // .on('pass', function(test) {
     //     console.log('Test passed');
@@ -35,6 +36,6 @@ mocha.run()
     //     console.log(err);
     // })
     .on('end', function() {
-        console.log(results, 'results');
+        console.log('finished!');
     });
 
