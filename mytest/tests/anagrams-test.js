@@ -1,16 +1,12 @@
-var expect = require('expect.js');
+// var expect = require('expect.js');
 var anagrams;
-// try{
-//   anagrams = require(__dirname + '/../../anagrams/anagrams.js');
-// }catch(e){
-//   console.log(e);
-// }
-try {
-  console.log(fs);
-}catch(e) {
+try{
+  console.log(expect);
+  anagrams = require(__dirname + '/../../anagrams/anagrams.js');
+}catch(e){
   console.log(e);
 }
-if (anagrams){
+if (anagrams && expect){
   describe('Anagrams Test', function() {
     it('should return empty array for empty string', function() {
       expect(anagrams('')).to.eql([]);
