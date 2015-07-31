@@ -1,7 +1,7 @@
 var expect = require('expect.js');
 var EventEmitter;
 try{
-  EventEmitter = require(__dirname + '/../EventEmitter/EventEmitter.js');
+  EventEmitter = require(__dirname + '/../../EventEmitter/EventEmitter.js');
 }catch(e){
   console.log(e);
 }

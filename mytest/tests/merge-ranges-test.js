@@ -1,7 +1,7 @@
 var expect = require('expect.js');
 var mergeRanges;
 try{
-	mergeRanges = require(__dirname + '/../merge-ranges/merge-ranges.js');
+	mergeRanges = require(__dirname + '/../../merge-ranges/merge-ranges.js');
 }catch(e){
   console.log(e);
 }

@@ -1,7 +1,7 @@
 var expect = require('expect.js');
 var hasCycle;
 try{
-  hasCycle = require(__dirname + '/../linked-list-cycle/linked-list-cycle.js');
+  hasCycle = require(__dirname + '/../../linked-list-cycle/linked-list-cycle.js');
 }catch(e){
   console.log(e);
 }

@@ -1,7 +1,7 @@
 var expect = require('expect.js');
 var anagrams;
 try{
-  anagrams = require(__dirname + '/../anagrams/anagrams.js');
+  anagrams = require(__dirname + '/../../anagrams/anagrams.js');
 }catch(e){
   console.log(e);
 }

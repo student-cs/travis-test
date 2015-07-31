@@ -1,7 +1,7 @@
 var expect = require('expect.js');
 var balancedParens;
 try{
-  balancedParens = require(__dirname + '/../balanced-parens/balanced-parens.js');
+  balancedParens = require(__dirname + '/../../balanced-parens/balanced-parens.js');
 }catch(e){
   console.log(e);
 }

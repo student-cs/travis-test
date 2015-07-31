@@ -1,7 +1,7 @@
 var expect = require('expect.js');
 var Stack;
 try{
-  Stack = require(__dirname + '/../stack-queue/stack-queue.js');
+  Stack = require(__dirname + '/../../stack-queue/stack-queue.js');
 }catch(e){
   console.log(e);
 }
