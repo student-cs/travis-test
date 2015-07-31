@@ -1,8 +1,8 @@
 var Mocha = require('mocha');
-var fs = require('fs'),
+var fs = require('fs');
 
 // First, you need to instantiate a Mocha instance.
-var mocha = new Mocha();
+var mocha = new Mocha({});
 
 // Then, you need to use the method "addFile" on the mocha
 // object for each file.
