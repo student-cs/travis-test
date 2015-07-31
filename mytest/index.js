@@ -1,5 +1,5 @@
 var Mocha = require('mocha');
-var expect = requrie('expect');
+var expect = require('expect');
 
 var fs = require('fs');
 // First, you need to instantiate a Mocha instance.
