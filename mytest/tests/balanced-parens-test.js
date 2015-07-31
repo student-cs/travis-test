@@ -5,6 +5,7 @@ try{
 }catch(e){
   console.log(e);
 }
+
 if (balancedParens){
   describe('Balanced Parens Test', function() {
     it('should return true when parens are balanced', function() {
