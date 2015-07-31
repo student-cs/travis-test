@@ -11,7 +11,7 @@ var mocha = new Mocha({});
 fs.readdirSync(__dirname + '/tests/').forEach(function(file){
     // Use the method "addFile" to add the file to mocha
     mocha.addFile(
-        path.join(__dirname + '/tests/', file);
+        path.join(__dirname + '/tests/', file)
     );
 });
 
