@@ -4,7 +4,7 @@
  * A->B->C->D
  *
  * However, linked lists can also have cyclical references:
- *
+ 
  * A->B->C->D
  *    ^     |
  *    |     V
