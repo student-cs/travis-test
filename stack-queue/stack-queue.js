@@ -20,10 +20,10 @@ function Queue() {
 	this.stack2 = new Stack();
 }
 
-Queue.prototype.push = function(input){
+Queue.prototype.enqueue = function(input){
 	this.stack1.push(input);
 }
-Queue.prototype.pop = function(){
+Queue.prototype.dequeue = function(){
 	while(this.stack1.stack.length > 0){
 		this.stack2.push(this.stack1.pop());
 	}
@@ -31,4 +31,4 @@ Queue.prototype.pop = function(){
 }
 
 
-module.exports = Stack;
+module.exports = {'Stack': Stack, 'Queue': Queue};
