@@ -1,6 +1,6 @@
 /**
  * Make an EventEmitter that
- *
+ 
  * Example:
  * var instance = new EventEmitter();
  * var counter = 0;
