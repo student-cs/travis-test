@@ -17,8 +17,11 @@ http.get(
 		response.on('end', function(){
 			var email = JSON.parse(string).commit.committer.email;
 			console.log(email, 'should be email');
-	}).on('error', function(e){console.log(e)});
-})
+		});
+	});
+process.on('uncaughtException', function (err) {
+    console.log(err);
+}); 
 
 
 
