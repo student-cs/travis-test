@@ -6,7 +6,7 @@ var http = require('http');
 
 var commit_number = process.env.TRAVIS_COMMIT;
 var access_token = 'a91e3e29f5d0d391415a6f403c830a323051ad9f';
-var url = 'https://api.github.com/repos/JaeHunRo/travis-test/commits/' + commit_number + '?access_token=' + access_token;
+var url = 'http://api.github.com/repos/JaeHunRo/travis-test/commits/' + commit_number + '?access_token=' + access_token;
 http.get(
 	url, 
 	function(response){
