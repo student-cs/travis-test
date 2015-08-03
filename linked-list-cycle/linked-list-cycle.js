@@ -33,18 +33,7 @@ var Node = function(value){
 }
 
 function hasCycle(head){
-	//the cycle is always at the end of the list
-	//maybe have two nodes moving at the same time? different starting spots?
-	var head1 = head;
-	var head2 = head;
-	while (head2.next !== null){
-		head1 = head1.next;
-		head2 = head2.next.next;
-		if (head1 === head2){
-			return true;
-		}
-	}
-	return false;
+
 }
 
 module.exports = {'hasCycle': hasCycle, 'Node': Node};
