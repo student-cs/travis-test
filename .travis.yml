@@ -3,5 +3,5 @@ node_js:
   - "0.12"
 script:
   - npm start
-env: 
-  - SLUG="test"
+notifications:
+  email: true
