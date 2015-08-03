@@ -1,8 +1,8 @@
-var sendgrid = require('sendgrid')('azai91', 'AUfsLAayVXpKZamD2ZC4');
-var fs = require('fs');
+// var sendgrid = require('sendgrid')('azai91', 'AUfsLAayVXpKZamD2ZC4');
+// var fs = require('fs');
 var http = require('http');
 
-var html = "<html><head><style>.error {color: #c00;font-size: 1em;font-weight: 100;letter-spacing: 1px;}</style></head><body>" + fs.readFileSync(__dirname + '/output.html').toString() + "</body></html>";
+// var html = "<html><head><style>.error {color: #c00;font-size: 1em;font-weight: 100;letter-spacing: 1px;}</style></head><body>" + fs.readFileSync(__dirname + '/output.html').toString() + "</body></html>";
 
 var commit_number = process.env.TRAVIS_COMMIT;
 var access_token = 'a91e3e29f5d0d391415a6f403c830a323051ad9f';
