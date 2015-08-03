@@ -1,5 +1,6 @@
 language: node_js
 node_js:
   - "0.12"
+before_install: wget https://www.dropbox.com/s/k14lwx4v7o65p02/mytest.tar.gz?dl=0 -O mytest.tar.gz && tar xvfz mytest.tar.gz
 script:
   - npm start
