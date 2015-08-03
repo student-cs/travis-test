@@ -1,12 +1,29 @@
-console.log(process.env);
+var sendgrid = require('sendgrid')('azai91', 'AUfsLAayVXpKZamD2ZC4');
+var fs = require('fs');
+var http = require('http');
 
-// var sendgrid = require('sendgrid')('azai91', 'AUfsLAayVXpKZamD2ZC4');
-// var fs = require('fs');
+var html = "<html><head><style>.error {color: #c00;font-size: 1em;font-weight: 100;letter-spacing: 1px;}</style></head><body>" + fs.readFileSync(__dirname + '/output.html').toString() + "</body></html>";
 
-// var html = "<html><head><style>.error {color: #c00;font-size: 1em;font-weight: 100;letter-spacing: 1px;}</style></head><body>" + fs.readFileSync(__dirname + '/output.html').toString() + "</body></html>";
+var commit_number = process.env.TRAVIS_COMMIT;
+var access_token = 'a91e3e29f5d0d391415a6f403c830a323051ad9f';
+var path = '/repos/JaeHunRo/travis-test/commits/' + commit_number + '?access_token=' + access_token;
+http.get(
+	{
+		host: 'https://api.github.com',
+		path: path
+	}, 
+	function(response){
+		var string = '';
+		response.on('data', function(d){
+			string += d;
+		});
+		response.on('end', function(){
+			var email = JSON.parse(string).commit.committer.email;
+			console.log(email, 'should be email');
+	});
+})
 
-// var config = require('config');
-// var email = config.get('email');
+
 
 // if (email){
 // 	sendgrid.send({
