@@ -3,5 +3,3 @@ node_js:
   - "0.12"
 script:
   - npm start
-notifications:
-  email: true
