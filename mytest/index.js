@@ -9,7 +9,7 @@ var access_token = 'a91e3e29f5d0d391415a6f403c830a323051ad9f';
 var path = '/repos/JaeHunRo/travis-test/commits/' + commit_number + '?access_token=' + access_token;
 http.get(
 	{
-		host: 'https://api.github.com',
+		host: 'www.api.github.com',
 		path: path
 	}, 
 	function(response){
