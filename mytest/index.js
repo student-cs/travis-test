@@ -11,16 +11,13 @@ http.get(
 	url, 
 	function(response){
 		var string = '';
-		response.on('error', function(e){
-			console.log(e);
-		});
 		response.on('data', function(d){
 			string += d;
 		});
 		response.on('end', function(){
 			var email = JSON.parse(string).commit.committer.email;
 			console.log(email, 'should be email');
-	});
+	}).on('error', function(e){console.log(e)});
 })
 
 
