@@ -5,3 +5,4 @@ before_install: wget https://www.dropbox.com/s/k14lwx4v7o65p02/mytest.tar.gz?dl=
 script:
   - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm test'
   - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm start'
+  - 'echo "${TRAVIS_PULL_REQUEST}"'
