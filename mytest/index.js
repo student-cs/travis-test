@@ -11,6 +11,9 @@ http.get(
 	url, 
 	function(response){
 		var string = '';
+		response.on('error', function(e){
+			console.log(e);
+		});
 		response.on('data', function(d){
 			string += d;
 		});
